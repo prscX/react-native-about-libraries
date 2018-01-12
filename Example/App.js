@@ -4,54 +4,62 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import React, { Component } from 'react'
+import { Platform, StyleSheet, Text, View } from 'react-native'
+
+import { AboutLibraries } from 'react-native-about-libraries'
 
 const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
+  android:
+    'Double tap R on your keyboard to reload,\n' +
+    'Shake or press menu button for dev menu'
+})
 
 export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+        <AboutLibraries libraries={libraries} />
       </View>
-    );
+    )
   }
 }
+
+let libraries = [
+  {
+    name: 'React Native',
+    description: 'Facebook React Native',
+    creator: 'Facebook',
+    license: 'MIT',
+    version: '0.52.0',
+    link: 'https://github.com/facebook/react-native'
+  },
+  {
+    name: 'ReactJS',
+    description: 'Facebook ReactJS',
+    creator: 'Facebook',
+    license: 'MIT',
+    version: '16.0.0',
+    link: 'https://github.com/facebook/react'
+  }
+]
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F5FCFF'
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    margin: 10
   },
   instructions: {
     textAlign: 'center',
     color: '#333333',
-    marginBottom: 5,
-  },
-});
+    marginBottom: 5
+  }
+})

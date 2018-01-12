@@ -1,0 +1,20 @@
+{
+  "name": "react-native-about-libraries",
+  "version": "0.0.1",
+  "private": false,
+  "description": "React Native: It offers information about install packages",
+  "author": {
+    "name": "Pranav Raj Singh Chauhan",
+    "email": "pranavchauhan01@gmail.com"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prscX/react-native-about-libraries.git"
+  },
+  "devDependencies": {
+    "prettier-pack": "0.0.4"
+  },
+  "contributors": [],
+  "maintainers": []
+}
