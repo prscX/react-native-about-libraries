@@ -9,6 +9,7 @@ Here's a quick overview of functionalities supported:
 * Listing of used open source libraries
 * Provision for adding app section (optional)
 * Autodetect installed packages
+* Auto Font Scaling
 * Much much more... try the sample for a quick overview.
 
 ## Getting started
@@ -60,6 +61,11 @@ let libraries = [
 | `renderLibraries` | `Function` |         | You can provide your own custom library section renderer                                                   |  |
 | `libraryStyle`    | `JOSN`     |         | You can customize library renderer style by pass your custom styles                                        |  |
 | `aboutStyle`      | `JSON`     |         | You can customize about section renderer by providing about style                                          |
+
+## TODO
+
+* Autodetect installed packages
+* Auto Font Scaling
 
 ## Contributing
 
