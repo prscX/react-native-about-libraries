@@ -17,7 +17,9 @@ Here's a quick overview of functionalities supported:
 
 ## Usage
 
-```
+```javascript
+import { AboutLibraries } from 'react-native'
+
 <AboutLibraries about={about} libraries={libraries} />
 
 
