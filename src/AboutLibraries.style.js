@@ -5,7 +5,7 @@ let style = StyleSheet.create({
     width: '100%'
   },
   aboutContainer: {
-    height: 100,
+    height: 130,
     margin: 10,
     alignItems: 'center'
   },

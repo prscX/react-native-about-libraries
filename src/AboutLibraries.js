@@ -22,18 +22,24 @@ class AboutLibraries extends Component {
     if (!this.props.about) return <View />
 
     let { avatar, name, description, version } = this.props.about
+    let aboutStyle = this.props.aboutStyle
+    if (!aboutStyle) aboutStyle = {}
 
     return (
-      <View style={style.aboutContainer}>
-        <Image style={style.avatar} source={avatar} />
-        <View style={style.nameContainer}>
-          <Text style={style.name}>{name}</Text>
+      <View style={[style.aboutContainer, aboutStyle.aboutContainer]}>
+        <Image style={[style.avatar, aboutStyle.avatar]} source={avatar} />
+        <View style={[style.nameContainer, aboutStyle.nameContainer]}>
+          <Text style={[style.name, aboutStyle.name]}>{name}</Text>
         </View>
-        <View style={style.descriptionContainer}>
-          <Text style={style.description}>{description}</Text>
+        <View
+          style={[style.descriptionContainer, aboutStyle.descriptionContainer]}
+        >
+          <Text style={[style.description, aboutStyle.description]}>
+            {description}
+          </Text>
         </View>
-        <View style={style.versionContainer}>
-          <Text style={style.version}>{version}</Text>
+        <View style={[style.versionContainer, aboutStyle.versionContainer]}>
+          <Text style={[style.version, aboutStyle.version]}>{version}</Text>
         </View>
       </View>
     )
@@ -50,7 +56,7 @@ class AboutLibraries extends Component {
         license={item.license}
         version={item.version}
         link={item.link}
-        style={this.props.libraryStyle}
+        libraryStyle={this.props.libraryStyle}
       />
     )
   }

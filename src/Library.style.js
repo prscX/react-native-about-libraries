@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, PixelRatio } from 'react-native'
 
 let style = StyleSheet.create({
   container: {

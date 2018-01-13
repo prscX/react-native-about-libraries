@@ -19,14 +19,16 @@ import style from './Library.style'
 class Library extends Component {
   _renderHeader() {
     let { name, creator, license, version, link } = this.props
+    let libraryStyle = this.props.libraryStyle
+    if (!libraryStyle) libraryStyle = {}
 
     return (
-      <View style={style.header}>
-        <View style={style.nameContainer}>
-          <Text style={style.name}>{name}</Text>
+      <View style={[style.header, libraryStyle.header]}>
+        <View style={[style.nameContainer, libraryStyle.nameContainer]}>
+          <Text style={[style.name, libraryStyle.name]}>{name}</Text>
         </View>
-        <View style={style.creatorContainer}>
-          <Text style={style.creator}>{creator}</Text>
+        <View style={[style.creatorContainer, libraryStyle.creatorContainer]}>
+          <Text style={[style.creator, libraryStyle.creator]}>{creator}</Text>
         </View>
       </View>
     )
@@ -34,16 +36,22 @@ class Library extends Component {
 
   _renderBody() {
     let { name, description, creator, license, version, link } = this.props
+    let libraryStyle = this.props.libraryStyle
+    if (!libraryStyle) libraryStyle = {}
 
     return (
-      <View style={style.body}>
-        <Text style={style.description}>{description}</Text>
+      <View style={[style.body, libraryStyle.body]}>
+        <Text style={[style.description, libraryStyle.description]}>
+          {description}
+        </Text>
       </View>
     )
   }
 
   _renderLibrary() {
     let { name, description, creator, license, version, link } = this.props
+    let libraryStyle = this.props.libraryStyle
+    if (!libraryStyle) libraryStyle = {}
 
     let Touchable = Platform.select({
       ios: () => TouchableHighlight,
@@ -55,12 +63,12 @@ class Library extends Component {
         onPress={() => {
           Linking.openURL(link)
         }}
-        style={style.container}
+        style={[style.container, libraryStyle.container]}
         underlayColor={'#FFF'}
       >
         <View>
           {this._renderHeader()}
-          <View style={style.seprator} />
+          <View style={[style.seprator, libraryStyle.seprator]} />
           {this._renderBody()}
         </View>
       </Touchable>
