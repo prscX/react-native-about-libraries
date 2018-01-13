@@ -12,7 +12,7 @@ Here's a quick overview of functionalities supported:
 * Auto Font Scaling
 * Much much more... try the sample for a quick overview.
 
-<center><img src="hero.png"></center>
+<center><img src="hero.png" width="250" height="400"></center>
 
 ## Getting started
 
