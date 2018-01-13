@@ -50,6 +50,17 @@ let libraries = [
 ]
 ```
 
+## Props
+
+| Prop              | Type       | Default | Note                                                                                                       |
+| ----------------- | ---------- | ------- | ---------------------------------------------------------------------------------------------------------- |
+| `about`           | `JSON`     |         | You can pass app info in order to render the app header. It's props are avatar, name, description, version |
+| `libraries`       | `JSON`     |         | List of libraries you are using within your app                                                            |
+| `renderAbout`     | `Function` |         | You can provide your own custom about section renderer                                                     |
+| `renderLibraries` | `Function` |         | You can provide your own custom library section renderer                                                   |  |
+| `libraryStyle`    | `JOSN`     |         | You can customize library renderer style by pass your custom styles                                        |  |
+| `aboutStyle`      | `JSON`     |         | You can customize about section renderer by providing about style                                          |
+
 ## Contributing
 
 Contributions are welcome and are greatly appreciated! Every little bit helps, and credit will always be given.
