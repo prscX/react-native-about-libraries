@@ -12,6 +12,8 @@ Here's a quick overview of functionalities supported:
 * Auto Font Scaling
 * Much much more... try the sample for a quick overview.
 
+<center><img src="hero.png"></center>
+
 ## Getting started
 
 `npm install react-native-about-libraries --save`
