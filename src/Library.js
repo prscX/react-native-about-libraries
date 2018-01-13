@@ -1,6 +1,14 @@
 import React, { Component } from 'react'
 
-import { View, Text } from 'react-native'
+import {
+  View,
+  Text,
+  Linking,
+  TouchableNativeFeedback,
+  TouchableHighlight,
+  Platform
+} from 'react-native'
+import style from './Library.style'
 
 /**
  * Props
@@ -9,18 +17,53 @@ import { View, Text } from 'react-native'
  * - renderLibrary
  */
 class Library extends Component {
-  _renderLibrary() {
+  _renderHeader() {
+    let { name, creator, license, version, link } = this.props
+
+    return (
+      <View style={style.header}>
+        <View style={style.nameContainer}>
+          <Text style={style.name}>{name}</Text>
+        </View>
+        <View style={style.creatorContainer}>
+          <Text style={style.creator}>{creator}</Text>
+        </View>
+      </View>
+    )
+  }
+
+  _renderBody() {
     let { name, description, creator, license, version, link } = this.props
 
     return (
-      <View style={{ height: 300, width: '100%' }}>
-        <Text>{name}</Text>
-        <Text>{description}</Text>
-        <Text>{creator}</Text>
-        <Text>{license}</Text>
-        <Text>{version}</Text>
-        <Text>{link}</Text>
+      <View style={style.body}>
+        <Text style={style.description}>{description}</Text>
       </View>
+    )
+  }
+
+  _renderLibrary() {
+    let { name, description, creator, license, version, link } = this.props
+
+    let Touchable = Platform.select({
+      ios: () => TouchableHighlight,
+      android: () => TouchableNativeFeedback
+    })()
+
+    return (
+      <Touchable
+        onPress={() => {
+          Linking.openURL(link)
+        }}
+        style={style.container}
+        underlayColor={'#FFF'}
+      >
+        <View>
+          {this._renderHeader()}
+          <View style={style.seprator} />
+          {this._renderBody()}
+        </View>
+      </Touchable>
     )
   }
 

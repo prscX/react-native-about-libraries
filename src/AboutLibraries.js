@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import { View, FlatList } from 'react-native'
+import { View, FlatList, Text, Image } from 'react-native'
 
 import { Library } from './Library'
+
+import style from './AboutLibraries.style'
 
 /**
  * Props
@@ -9,11 +11,33 @@ import { Library } from './Library'
  *   name, description, creator, license, version, link
  * }]
  *
+ * - libraryStyle
+ *
  * - renderAbout: Function
  * - renderLibrary: Function
  */
 class AboutLibraries extends Component {
-  _renderAbout() {}
+  _renderAbout() {
+    if (this.props.renderAbout) return this.props.renderAbout()
+    if (!this.props.about) return <View />
+
+    let { avatar, name, description, version } = this.props.about
+
+    return (
+      <View style={style.aboutContainer}>
+        <Image style={style.avatar} source={avatar} />
+        <View style={style.nameContainer}>
+          <Text style={style.name}>{name}</Text>
+        </View>
+        <View style={style.descriptionContainer}>
+          <Text style={style.description}>{description}</Text>
+        </View>
+        <View style={style.versionContainer}>
+          <Text style={style.version}>{version}</Text>
+        </View>
+      </View>
+    )
+  }
 
   _renderLibrary({ item, index }) {
     if (this.props.renderLibrary) return this.props.renderLibrary()
@@ -26,6 +50,7 @@ class AboutLibraries extends Component {
         license={item.license}
         version={item.version}
         link={item.link}
+        style={this.props.libraryStyle}
       />
     )
   }
@@ -35,8 +60,10 @@ class AboutLibraries extends Component {
   render() {
     return (
       <FlatList
+        style={{ width: '100%' }}
         data={this.props.libraries}
         keyExtractor={this._keyExtractor}
+        ListHeaderComponent={() => this._renderAbout()}
         renderItem={({ item, index }) => this._renderLibrary({ item, index })}
       />
     )
