@@ -1,3 +1,13 @@
+
+<p align="center"><img src="hero.png" width="250" height="400"></p>
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/react-native-about-libraries"><img src="http://img.shields.io/npm/v/react-native-about-libraries.svg?style=flat" /></a>
+  <a href="https://github.com/prscX/react-native-about-libraries/pulls"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" /></a>
+  <a href="https://github.com/prscX/react-native-about-libraries#License"><img src="https://img.shields.io/npm/l/react-native-about-libraries.svg?style=flat" /></a>
+</p>
+
+
 # React Native About Libraries
 
 The React Native About Libraries package is on a similar concept of [AboutLibraries](https://github.com/mikepenz/AboutLibraries). We would like to credit this library to all the [AboutLibraries](https://github.com/mikepenz/AboutLibraries) contributors
@@ -11,8 +21,6 @@ Here's a quick overview of functionalities supported:
 * Autodetect installed packages
 * Auto Font Scaling
 * Much much more... try the sample for a quick overview.
-
-<center><img src="hero.png" width="250" height="400"></center>
 
 ## Getting started
 
