@@ -149,11 +149,6 @@ React Native About Libraries is provided under the MIT License
 | <img src="https://github.com/prscX/react-native-gradient-blur-view/raw/master/assets/hero.png" width="600" height="300" />                  |
 
 
-|  [react-native-about-libraries](https://github.com/prscX/react-native-about-libraries)             |
-| ----------------- |
-| <img src="https://github.com/prscX/react-native-about-libraries/raw/master/hero.png" width="600" height="600" />                  |
-
-
 
 |  [vs-essential-plugins](https://github.com/prscX/vs-essential-plugins)             |
 | ----------------- |
