@@ -1,5 +1,5 @@
 
-<p align="center"><img src="hero.png" width="250" height="400"></p>
+<p align="center"><img src="hero.png" width="300" height="600"></p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/react-native-about-libraries"><img src="http://img.shields.io/npm/v/react-native-about-libraries.svg?style=flat" /></a>
