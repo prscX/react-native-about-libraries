@@ -44,7 +44,7 @@ let about = {
 let libraries = [
   {
     name: 'ReactJS',
-    description: `React is a JavaScript library for building user interfaces.
+    description: `React is a JavaScript library for building user interfaces.`,
     creator: 'Facebook',
     license: 'MIT',
     version: '16.0.0',
@@ -69,7 +69,7 @@ let libraries = [
 | `libraries`       | `JSON`     |         | List of libraries you are using within your app                                                            |
 | `renderAbout`     | `Function` |         | You can provide your own custom about section renderer                                                     |
 | `renderLibraries` | `Function` |         | You can provide your own custom library section renderer                                                   |  |
-| `libraryStyle`    | `JOSN`     |         | You can customize library renderer style by pass your custom styles                                        |  |
+| `libraryStyle`    | `JSON`     |         | You can customize library renderer style by pass your custom styles                                        |  |
 | `aboutStyle`      | `JSON`     |         | You can customize about section renderer by providing about style                                          |
 
 ## TODO
