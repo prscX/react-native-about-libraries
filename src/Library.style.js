@@ -11,7 +11,8 @@ let style = StyleSheet.create({
     elevation: 1
   },
   header: {
-    height: 30,
+    paddingTop: 10,
+    paddingBottom: 10,
     flexDirection: 'row',
     justifyContent: 'space-between'
   },
