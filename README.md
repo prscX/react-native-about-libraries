@@ -8,8 +8,7 @@
   <a href="https://github.com/prscX/react-native-about-libraries#License"><img src="https://img.shields.io/npm/l/react-native-about-libraries.svg?style=flat" /></a>
 </p>
 
-
-  ReactNative: About Libraries (Android/iOS)
+    ReactNative: About Libraries (Android/iOS)
 
 If this project has helped you out, please support us with a star 🌟
 </h1>
