@@ -1,5 +1,6 @@
+<h1 align="center">
 
-<p align="center"><img src="hero.png" width="300" height="600"></p>
+<p align="center"><img src="hero.png" ></p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/react-native-about-libraries"><img src="http://img.shields.io/npm/v/react-native-about-libraries.svg?style=flat" /></a>
@@ -8,7 +9,10 @@
 </p>
 
 
-# React Native About Libraries
+  ReactNative: About Libraries (Android/iOS)
+
+If this project has helped you out, please support us with a star 🌟
+</h1>
 
 The React Native About Libraries package is on a similar concept of [AboutLibraries](https://github.com/mikepenz/AboutLibraries). We would like to credit this library to all the [AboutLibraries](https://github.com/mikepenz/AboutLibraries) contributors
 
@@ -22,11 +26,11 @@ Here's a quick overview of functionalities supported:
 * Auto Font Scaling
 * Much much more... try the sample for a quick overview.
 
-## Getting started
+## 📖 Getting started
 
 `npm install react-native-about-libraries --save`
 
-## Usage
+## 💻 Usage
 
 ```javascript
 import { AboutLibraries } from 'react-native-about-libraries'
@@ -61,7 +65,7 @@ let libraries = [
 ]
 ```
 
-## Props
+## 💡 Props
 
 | Prop              | Type       | Default | Note                                                                                                       |
 | ----------------- | ---------- | ------- | ---------------------------------------------------------------------------------------------------------- |
@@ -77,84 +81,34 @@ let libraries = [
 * Autodetect installed packages
 * Auto Font Scaling
 
-## Contributing
 
+## ✨ Credits
+
+
+## 🤔 How to contribute
+Have an idea? Found a bug? Please raise to [ISSUES](https://github.com/prscX/react-native-about-libraries/issues).
 Contributions are welcome and are greatly appreciated! Every little bit helps, and credit will always be given.
 
-## License
-
-React Native About Libraries is provided under the MIT License
-
+## 💫 Where is this library used?
+If you are using this library in one of your projects, add it in this list below. ✨
 
 
-## Other Contributions
+## 📜 License
+This library is provided under the Apache License.
 
-| [awesome-react-native-native-modules](https://github.com/prscX/awesome-react-native-native-modules)              |
-| ----------------- |
-| <img src="https://github.com/prscX/awesome-react-native-native-modules/raw/master/assets/hero.png" width="600" height="300" />                  |
+RNAboutLibraries @ [prscX](https://github.com/prscX)
 
+## 💖 Support my projects
+I open-source almost everything I can, and I try to reply everyone needing help using these projects. Obviously, this takes time. You can integrate and use these projects in your applications for free! You can even change the source code and redistribute (even resell it).
 
-| [react-native-spruce](https://github.com/prscX/react-native-spruce)              |
-| ----------------- |
-| <img src="https://github.com/willowtreeapps/spruce-ios/raw/master/imgs/extensibility-tests.gif" width="600" height="300" />                  |
+However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it:
+* Starring and sharing the projects you like 🚀
+* If you're feeling especially charitable, please follow [prscX](https://github.com/prscX) on GitHub.
 
+  <a href="https://www.buymeacoffee.com/prscX" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-| [react-native-taptargetview](https://github.com/prscX/react-native-taptargetview) & [react-native-material-showcase-ios](https://github.com/prscX/react-native-material-showcase-ios)              |
-| ----------------- |
-| <img src="https://github.com/KeepSafe/TapTargetView/raw/master/.github/video.gif" width="600" height="600" />  |
-
-
-| [react-native-bottom-action-sheet](https://github.com/prscX/react-native-bottom-action-sheet)              |
-| ----------------- |
-| <img src="https://github.com/rubensousa/BottomSheetBuilder/raw/master/screens/normal_demo.gif" width="600" height="600" />                  |
-
-
-| [react-native-popover-menu](https://github.com/prscX/react-native-popover-menu)             |
-| ----------------- |
-| <img src="https://github.com/zawadz88/MaterialPopupMenu/raw/master/art/components_menus.png" width="600" height="300" />                  |
-
-
-| [react-native-tooltips](https://github.com/prscX/react-native-tooltips)             |
-| ----------------- |
-| <img src="https://camo.githubusercontent.com/add1764d27026b81adb117e07a10781c9abbde1b/687474703a2f2f692e696d6775722e636f6d2f4f4e383257526c2e676966" width="600" height="300" />                  |
-
-
-| [react-native-shine-button](https://github.com/prscX/react-native-shine-button)             |
-| ----------------- |
-| <img src="https://raw.githubusercontent.com/ChadCSong/ShineButton/master/demo_shine_others.gif" width="600" height="300" />                  |
-
-
-| [react-native-iconic](https://github.com/prscX/react-native-iconic)             |
-| ----------------- |
-| <img src="https://camo.githubusercontent.com/b18993cbfe91de8abdc0019dc9a6cd44707eec21/68747470733a2f2f6431337961637572716a676172612e636c6f756466726f6e742e6e65742f75736572732f3338313133332f73637265656e73686f74732f313639363538302f766266706f70666c6174627574746f6e332e676966" width="600" height="300" />                  |
-
-
-| [react-native-download-button](https://github.com/prscX/react-native-download-button)             |
-| ----------------- |
-| <img src="https://github.com/fenjuly/ArrowDownloadButton/raw/master/screenshots/arrowdownloadbutton.gif" width="600" height="600" />                  |
-
-
-| [react-native-siri-wave-view](https://github.com/prscX/react-native-siri-wave-view)             |
-| ----------------- |
-| <img src="https://cdn.dribbble.com/users/341264/screenshots/2203511/wave.gif" width="600" height="300" />                  |
-
-
-|  [react-native-material-shadows](https://github.com/prscX/react-native-material-shadows)             |
-| ----------------- |
-| <img src="https://raw.githubusercontent.com/harjot-oberai/MaterialShadows/master/screens/cover.png" width="600" height="300" />                  |
-
-
-|  [react-native-gradient-blur-view](https://github.com/prscX/react-native-gradient-blur-view)             |
-| ----------------- |
-| <img src="https://github.com/prscX/react-native-gradient-blur-view/raw/master/assets/hero.png" width="600" height="300" />                  |
-
-
-
-|  [vs-essential-plugins](https://github.com/prscX/vs-essential-plugins)             |
-| ----------------- |
-| <img src="https://pbs.twimg.com/profile_images/922911523328081920/jEKFRPKV_400x400.jpg" width="600" height="300" />                  |
-
-
-|  [prettier-pack](https://github.com/prscX/prettier-pack)             |
-| ----------------- |
-| <img src="https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-banner-light.png" width="600" height="300" />                  |
+  Thanks! ❤️
+  <br/>
+  [prscX.github.io](https://prscx.github.io)
+  <br/>
+  </ Pranav >

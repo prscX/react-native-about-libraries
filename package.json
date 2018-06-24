@@ -16,5 +16,6 @@
     "prettier-pack": "0.0.4"
   },
   "contributors": [],
-  "maintainers": []
+  "maintainers": [],
+  "license": "Apache License"
 }
