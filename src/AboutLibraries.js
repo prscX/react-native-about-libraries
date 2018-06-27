@@ -18,11 +18,14 @@ import style from './AboutLibraries.style'
  */
 class AboutLibraries extends Component {
   _renderAbout() {
-    if (this.props.renderAbout) return this.props.renderAbout()
-    if (!this.props.about) return <View />
+    let { about, aboutStyle, renderAbout } = this.props;
 
-    let { avatar, name, description, version } = this.props.about
-    let aboutStyle = this.props.aboutStyle
+    if (renderAbout) return renderAbout()
+    if (!about) return <View />
+
+    let { avatar, name, description, version } = about
+    let aboutStyle = aboutStyle
+
     if (!aboutStyle) aboutStyle = {}
 
     return (
@@ -46,7 +49,9 @@ class AboutLibraries extends Component {
   }
 
   _renderLibrary({ item, index }) {
-    if (this.props.renderLibrary) return this.props.renderLibrary()
+    let { libraries, libraryStyle, renderLibrary } = this.props
+
+    if (renderLibrary) return renderLibrary()
 
     return (
       <Library
@@ -56,7 +61,7 @@ class AboutLibraries extends Component {
         license={item.license}
         version={item.version}
         link={item.link}
-        libraryStyle={this.props.libraryStyle}
+        libraryStyle={libraryStyle}
       />
     )
   }
@@ -67,7 +72,7 @@ class AboutLibraries extends Component {
     return (
       <FlatList
         style={{ width: '100%' }}
-        data={this.props.libraries}
+        data={libraries}
         keyExtractor={this._keyExtractor}
         ListHeaderComponent={() => this._renderAbout()}
         renderItem={({ item, index }) => this._renderLibrary({ item, index })}

@@ -18,8 +18,8 @@ import style from './Library.style'
  */
 class Library extends Component {
   _renderHeader() {
-    let { name, creator, license, version, link } = this.props
-    let libraryStyle = this.props.libraryStyle
+    let { name, creator, license, version, link, libraryStyle } = this.props;
+
     if (!libraryStyle) libraryStyle = {}
 
     return (
@@ -35,8 +35,8 @@ class Library extends Component {
   }
 
   _renderBody() {
-    let { name, description, creator, license, version, link } = this.props
-    let libraryStyle = this.props.libraryStyle
+    let { name, description, creator, license, version, link, libraryStyle } = this.props;
+
     if (!libraryStyle) libraryStyle = {}
 
     return (
@@ -49,34 +49,35 @@ class Library extends Component {
   }
 
   _renderLibrary() {
-    let { name, description, creator, license, version, link } = this.props
-    let libraryStyle = this.props.libraryStyle
+    let { name, description, creator, license, version, link, libraryStyle } = this.props;
+
     if (!libraryStyle) libraryStyle = {}
 
-    let Touchable = Platform.select({
-      ios: () => TouchableHighlight,
-      android: () => TouchableNativeFeedback
-    })()
+    // let Touchable = Platform.select({
+    //   ios: () => TouchableHighlight,
+    //   android: () => TouchableHighlight
+    // })();
 
     return (
-      <Touchable
+      <TouchableHighlight
         onPress={() => {
           Linking.openURL(link)
         }}
         style={[style.container, libraryStyle.container]}
-        underlayColor={'#FFF'}
+        underlayColor={'#FFFFFF'}
       >
         <View>
           {this._renderHeader()}
           <View style={[style.seprator, libraryStyle.seprator]} />
           {this._renderBody()}
         </View>
-      </Touchable>
+      </TouchableHighlight>
     )
   }
 
   render() {
-    if (this.props.renderLibrary) return this.props.renderLibrary()
+    let { renderLibrary } = this.props
+    if (renderLibrary) return renderLibrary()
 
     return this._renderLibrary()
   }
