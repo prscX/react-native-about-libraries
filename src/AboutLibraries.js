@@ -24,7 +24,6 @@ class AboutLibraries extends Component {
     if (!about) return <View />
 
     let { avatar, name, description, version } = about
-    let aboutStyle = aboutStyle
 
     if (!aboutStyle) aboutStyle = {}
 
