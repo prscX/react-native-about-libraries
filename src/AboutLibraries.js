@@ -68,6 +68,8 @@ class AboutLibraries extends Component {
   _keyExtractor = (item, index) => item.name
 
   render() {
+    let { libraries } = this.props
+
     return (
       <FlatList
         style={{ width: '100%' }}
